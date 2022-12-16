@@ -1,0 +1,45 @@
+.loading-card {
+  min-width: 200px;
+  height: 170px;
+  background-color: rgb(242, 241, 241);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  flex-basis: 45%;
+  &::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: loading 1s infinite;
+  }
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search-content {
+  margin-top: 20px;
+}
+
+@keyframes loading {
+  0% {
+    transform: skewX(-10deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-10deg) translateX(200%);
+  }
+}
