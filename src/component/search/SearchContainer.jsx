@@ -15,7 +15,8 @@ export default function Search() {
                <h5 className="gallery-title">{`${inputquery} Pictures`}</h5>
             {
                 isloading ? <LoadCardGrid /> : 
-                error ? <Error content={"image not found/fetch error"} /> : <Gallery images={images} />
+                error ? <Error content={"image not found/fetch error"} /> :
+                 <Gallery images={images} />
             }
             
         </div>
