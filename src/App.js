@@ -14,7 +14,7 @@ import Search from './component/search/SearchContainer';
 function App() {
   const navigate = useNavigate();
 
-  const [recentSearch, setRecentSearch] = useState(() => new Set())
+  const [recentSearch, setRecentSearch] = useState(() => new Set(["Mountain","Trees","Ocean"]))
 
   function handelsubmit(query) {
     setRecentSearch((prevSet) => {

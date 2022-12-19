@@ -4,7 +4,7 @@ export default function Initial() {
     return (
         <div className="initial-page">
             <p>
-               Browse image for free...  
+               Browse images like Mountains, Food etc 
             </p>
         </div>
     )
